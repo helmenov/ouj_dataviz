@@ -19,8 +19,9 @@
 \end{frame}}
 \title{Pythonによるデータ可視化}
 \subtitle{――初めての人向け・90分$\times$8コマ――}
-\author{講師用・受講者用 共通資料}
-\date{想定日程：1日目 4コマ／2日目 4コマ}
+\author{薗田 光太郎 \\ \href{mailto:kotaro.sonoda@ouj.ac.jp}{\texttt{kotaro.sonoda@ouj.ac.jp}}}
+\institute{長崎大学病院 医療情報部}
+\date{2026年11月14日（土）・15日（日）}
 \begin{document}
 
 \begin{frame}
@@ -126,7 +127,7 @@
 \begin{lstlisting}
 winget install AivarAnnamaa.Thonny
 \end{lstlisting}
-\item うまくいかない場合は、公式サイト \texttt{thonny.org} からも入手できます
+\item うまくいかない場合は、公式サイト \href{https://thony.org/}{\texttt{thonny.org}} からも入手できます
 \item コードは上の広い画面に書き、緑の $\blacktriangleright$ ボタン（または F5キー）で実行します。結果は下の画面に出ます
 \item ファイルは名前をつけて保存します（例：\texttt{session2.py}）。配布ファイルは同じフォルダに置くのが約束です
 \end{itemize}
@@ -166,6 +167,26 @@ print(1 + 2)
 \end{enumerate}
 \vspace{0.5em}
 追加の部品（pandas や japanize-matplotlib）は、メニューの「ツール → パッケージを管理」から入れることができます。第3コマ以降で使います。
+\end{frame}
+
+\begin{frame}[fragile]{データのダウンロード（実習の前に）}
+\begin{itemize}
+\item 実習で使うデータは、あらかじめ固めてある \textbf{\texttt{data.zip} をダウンロード}してください
+\item 配布ページ（data.zip）：\ \url{https://github.com/helmenov/lecture-dataviz/blob/main/data.zip}
+\item ページ右側のダウンロードボタンで落とし、\textbf{展開（解凍）すると \texttt{data} フォルダが出てきます}
+\item \textbf{置き場所}：ドキュメントフォルダの中に講義用のフォルダ（例：\texttt{dataviz}）を作り、その中に \texttt{code} フォルダと\textbf{並べて}置きます
+\end{itemize}
+\begin{lstlisting}
+ドキュメント/dataviz/     ← 講義フォルダ(自分で作る)
+  code/    プログラム(session1.py など)
+  data/    ダウンロードしたデータ(csv ファイル)
+\end{lstlisting}
+\begin{itemize}
+\item プログラムは、隣の \texttt{data} フォルダからデータを読みます。\textbf{フォルダの並びを崩すと、データが見つからずエラーになります}
+\item zip で配られている場合は、展開（解凍）してから置いてください。ダウンロードフォルダに置いたままにしないこと
+\item プログラムは \texttt{code} フォルダの中のファイルを開いて使います
+\item テスト用のデータ（\texttt{test\_psych.csv}）もこのフォルダに入っています。第8コマで使います
+\end{itemize}
 \end{frame}
 
 \begin{frame}[fragile]{変数：名前のついた箱}

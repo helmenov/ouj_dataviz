@@ -1,5 +1,9 @@
 # Pythonによるデータ可視化 講義資料（90分×8コマ）
 
+公開先：https://github.com/helmenov/lecture-dataviz
+受講者向けデータ（data フォルダを固めた data.zip）：https://github.com/helmenov/lecture-dataviz/blob/main/data.zip
+※ data の内容を更新したら、リポジトリ直下の `data.zip` も作り直すこと（`zip -r data.zip data`）
+
 対象：Pythonを初めて触る一般の受講者
 環境：Thonny（Python本体と編集画面が一緒になった初心者向け無料ソフト）
 - インストール（Windows）：ターミナルで `winget install AivarAnnamaa.Thonny`
@@ -18,18 +22,18 @@
 | 8 | テスト。データを眺めて、気づいたことをグラフで納得させよ |
 
 ## ファイル構成
-- `slides.pdf` … 講義スライド（全70枚、全8コマ＋付録）。投影・配布兼用
+- `slides.pdf` … 講義スライド（全71枚、全8コマ＋付録）。投影・配布兼用
 - `slides.tex` … スライドのソース（TeX Live / LuaLaTeX Beamer）
 - `code/session1.py`〜`session8.py` … 各コマの例題コード＋演習問題
 - `code/answers/` … 演習の解答例（講師用）。session8 はテストの模範解答
 - `test_guide.md` … 第8コマ テスト実施ガイド（講師用。埋め込みパターンと評価基準）
-- `data/` … 練習用データ（すべてサンプルデータ）
+- `data/` … 練習用データ（すべてサンプルデータ）。**受講者にはこのフォルダを配布ページからダウンロードしてもらう**（第2コマのスライドで指示）
   - `weather_week.csv` 1週間の天気（第4コマ）
   - `shop_sales.csv` 小さな店の30日分の売上（第4コマ）
   - `survey.csv` アンケート60人分（第4・5コマ）
   - `sdt_trials.csv` 信号検出理論の実験100試行（第4コマ）
   - `psych_rt.csv` 反応時間の実験80名分（第6・7コマ）
-  - `test_psych.csv` 注意課題の実験120名分（第8コマ テスト用。当日配布）
+  - `test_psych.csv` 注意課題の実験120名分（第8コマ テスト用）
 - `assets/` … スライドで使う例図と、Thonnyの画面写真（番号注釈つき）
 
 ## 進め方の想定

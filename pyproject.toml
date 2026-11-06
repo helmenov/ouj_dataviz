@@ -1,0 +1,15 @@
+[project]
+name = "OUJ_DataViz"
+version = "0.1.0"
+description = ""
+authors = [
+    { name = "Kotaro Sonoda", email =  "kotaro.sonod@ouj.ac.jp" }
+    ]
+requires-python = ">= 3.12"
+
+dependencies = [
+    "japanize-matplotlib>=1.1.3",
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.4",
+    "pandas>=3.1.1",
+]
